@@ -4,6 +4,11 @@ const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
 
+// mounting middleware  for environmental variables and secrets
+require('dotenv').config();
+// connecting to the database from our server
+require('./config/database');
+
 // creating the express app
 const app = express();
 
