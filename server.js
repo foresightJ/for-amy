@@ -32,6 +32,7 @@ app.listen(port, function () {
 });
 
 // All API routes here, before the "catch all" route goes here
+app.use('/api', require('./routes/api/posts'))
 
 /** Defining a route to "catch all" non-AJAX request and serve up the index.html page 
 Note: the * is necessary to return the index.html on all non-AJAX requests */

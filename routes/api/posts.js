@@ -1,7 +1,8 @@
 // require our express back-end framework
 const express = require('express');
 const router = express.Router();
-const postCtrl = require('../..controllers/post');
+// const postCtrl = require('../..controllers/api/posts');
+const postCtrl = require('../../controllers/api/posts');
 
 // GET all posts
 router.get('/', postCtrl.index);
